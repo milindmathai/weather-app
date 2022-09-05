@@ -26,8 +26,8 @@ weatherForm.addEventListener("submit", (e)=>{
         }
 
         else{
-            message1.textContent = ""
-            message2.textContent = "The forecast in " + data.address +" is "+ data.weather + " but it feels like " + data.feelsLike 
+            message1.textContent = data.address
+            message2.textContent =  data.weatherDescription +": "+ data.weather + " degrees but it feels like " + data.feelsLike +" degrees. The humidity is " + data.humidity +"%."
             console.log("forecast is " + data.weather )
             console.log("forecast is " + data.feelsLike )
             console.log("address is " + data.address )
